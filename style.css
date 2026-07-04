@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.navbar{
+    background:#1e293b;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.menu li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.menu li a:hover{
+    color:#38bdf8;
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+.navbar{
+    padding:20px;
+}
+
+.menu{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#1e293b;
+    text-align:center;
+    padding:20px 0;
+}
+
+.menu.active{
+    display:flex;
+}
+
+.menu-btn{
+    display:block;
+}
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    min-height:100vh;
+}
+
+.apps{
+    max-width:1200px;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    text-decoration:none;
+    color:#111;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.card img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:22px;
+}
+
+.search-box{
+    position: relative;
+}
+
+#search{
+    width:300px;
+    height:40px;
+    padding:0 15px;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    font-size:16px;
+}
+
+.suggestions{
+    position:absolute;
+    top:45px;
+    left:0;
+    width:100%;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    z-index:999;
+}
+
